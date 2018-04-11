@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body {
+				height: 100%;
+			}
+			
+			body, p {
+				margin: 0;
+			}
+			
+			.parent {
+				height: 100%;
+			}
+			
+			.top, .bottom {
+				height: 60px;
+			}
+
+			.middle {
+				display: flex;
+			}
+			
+			.left, .right {
+				width: 120px;
+			}
+			
+			.right {
+				order: 2;
+			}
+			
+			.main {
+				flex: 1;
+				order: 1;
+				
+				margin: 0 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent" id="parent" style="background-color: lightgrey;">
+			<div class="top" style="background-color: lightblue;">
+				<p>Top</p>
+			</div>
+			
+			<div class="middle" style="background-color: pink;">
+				<div class="main" style="background-color: lightcoral;">
+					<p>Main</p>
+					<p>Main</p>
+					<p>
+						flex中的伸缩项目默认都拉伸为父元素的高度，可实现等高效果。
+						通过改变伸缩项目的order，可以实现元素顺序调换的效果
+						<br />
+						缺点: 兼容性不高
+					</p>
+				</div>
+				<div class="left" style="background-color: orange;">
+					<p>Left</p>
+				</div>
+				<div class="right" style="background-color: lightsalmon;">
+					<p>Right</p>
+				</div>
+			</div>
+			
+			<div class="bottom" style="background-color: lightgreen;">
+				Bottom
+			</div>
+		</div>
+	</body>
+</html>

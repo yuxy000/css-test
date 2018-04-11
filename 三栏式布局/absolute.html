@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body {
+				height: 100%;
+			}
+			
+			body, p {
+				margin: 0;
+			}
+			
+			.parent {
+				height: 100%;
+			}
+			
+			.top, .bottom {
+				height: 60px;
+			}
+
+			.middle {
+				position: relative;
+				height: calc(100% - 120px);
+			}
+			
+			.left, .right, .main {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+			}
+			
+			.left {
+				width: 120px;
+			}
+			
+			.right {
+				width: 120px;
+				right: 0;
+			}
+			
+			.main {
+				left: 140px;
+				right: 140px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent" id="parent" style="background-color: lightgrey;">
+			<div class="top" style="background-color: lightblue;">
+				<p>Top</p>
+			</div>
+			
+			<div class="middle" style="background-color: pink;">
+				<div class="main" style="background-color: lightcoral;">
+					<p>Main</p>
+					<p>Main</p>
+					<p>
+						设置子元素的top:0;bottom:0;使得所有子元素的高度都和父元素的高度相同，实现等高效果
+						<br />
+						缺点: 需要为.middle元素设置高度，扩展性较差
+					</p>
+				</div>
+				<div class="left" style="background-color: orange;">
+					<p>Left</p>
+				</div>
+				<div class="right" style="background-color: lightsalmon;">
+					<p>Right</p>
+				</div>
+			</div>
+			
+			<div class="bottom" style="background-color: lightgreen;">
+				Bottom
+			</div>
+		</div>
+	</body>
+</html>

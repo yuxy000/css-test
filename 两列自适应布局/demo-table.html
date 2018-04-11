@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p {
+				margin: 0;
+			}
+			
+			.parent {
+				display: table;
+				width: 100%;
+				background-color: lightgrey;
+			}
+			
+			.left-wrap {
+				display: table-cell;
+				width: 0.1%;
+				
+				background-color: pink;
+			}
+			
+			.left {
+				margin-right: 20px;
+				
+				background-color: lightblue;
+			}
+			
+			.right {
+				display: table-cell;
+				background-color: lightgreen;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="parent">
+			<div class="left-wrap">
+				<div class="left">
+					<p>LeftLeftLeftLeftLeftLeft</p>
+				</div>
+			</div>
+
+			<div class="right">
+				<p>Right</p>
+				<p>Right</p>
+				<p>
+					若table元素不设置table-layout:fixed，则宽度由内容撑开。
+					在某个table-cell元素的外层嵌套一层div，并设置足够小的宽度如width:0.1%
+				</p>
+			</div>
+		</div>
+	</body>
+
+</html>

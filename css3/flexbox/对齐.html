@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.flex-container {
+				display: -webkit-flex;
+				display: flex;
+				width: 400px;
+				height: 250px;
+				background-color: lightgrey;
+			}
+			
+			.flex-item {
+				background-color: cornflowerblue;
+				width: 75px;
+				height: 75px;
+				margin: 10px;
+			}
+			
+			.flex-item:first-child {
+				margin-right: auto;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h2>设置"margin"值为"auto"值，自动获取弹性容器中剩余的空间。所以设置垂直方向margin值为"auto"，可以使弹性子元素在弹性容器的两上轴方向都完全集中。</h2>
+		<div class="flex-container">
+			<div class="flex-item first">flex item 1</div>
+			<div class="flex-item second">flex item 2</div>
+			<div class="flex-item third">flex item 3</div>
+		</div>
+	</body>
+</html>

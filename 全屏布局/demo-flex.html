@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body, .parent {
+				height: 100%;
+			}
+			
+			body, p {
+				margin: 0;
+			}
+			
+			.parent {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.top, .bottom {
+				height: 60px;
+			}
+			
+			.middle {
+				display: flex;
+				flex: 1;
+			}
+			
+			.left {
+				width: 160px;
+				margin-right: 20px;
+			}
+			
+			.right {
+				flex: 1;
+				overflow: auto;
+			}
+			
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="parent" id="parent" style="background-color:lightgrey;">
+			<div class="top" style="background-color:lightblue">
+				<p>Top</p>
+			</div>
+			
+			<div class="middle" style="background-color:pink;">
+				<div class="left" style="background-color:orange;">
+					<p>Left</p>
+				</div>
+				<div class="right" style="background-color:lightsalmon;">
+					<div class="right-in">
+						<p>Right</p>
+						<p>
+							flex常用于小范围的布局，使用全屏布局时会因为性能问题，出现卡顿现象。
+							如果要使用全屏自适应布局，则只有flex才能达到效果
+						</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bottom" style="background-color:lightgreen;">
+				<p>Bottom</p>
+			</div>
+		</div>
+	</body>
+
+</html>

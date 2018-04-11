@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .wrap{
+            float: left;
+            border: 10px solid #000000;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 0 100px;
+            float: left;
+            display: inline;
+        }
+        /*
+            在ie6 下双边距bug
+            在ie6下 块元素有浮动 和横向的margin 横向的margin值放大两倍
+            解决 display: inline
+        */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+
+        </div>
+    </div>
+
+</body>
+</html>

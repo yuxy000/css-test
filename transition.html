@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div1{
+				width: 100px;
+				height: 100px;
+				background: red;
+				transition: width 2s, height 2s, -webkit-transform 2s;
+				-webkit-transition: width 2s, height 2s, transform 2s; 
+			}
+			
+			.div1:hover{
+				width: 200px;
+				height: 200px;
+				-webkit-transform: rotate(180deg);
+				transform: rotate(180deg);
+			}
+		</style>
+	</head>
+
+	<body>
+		<p><b>注意：</b>该实例无法在 Internet Explorer 9 及更早 IE 版本上工作。</p>
+
+		<div class="div1">鼠标移动到 div 元素上，查看过渡效果。</div>
+
+		<p>鼠标移动到 div 元素上，查看过渡效果。</p>
+	</body>
+
+</html>

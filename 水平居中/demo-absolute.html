@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.parent {
+				background-color: lightgreen;
+				height: 20px;
+			}
+			
+			.child {
+				position: absolute;
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				transform: translateX(-50%);
+				background-color: lightblue;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<h4>
+			IE9-浏览器不支持
+			<br />
+			translate函数的百分比是相对于自身宽度的，所以left:50%配合translateX(-50%)可实现居中效果
+		</h4>
+		<div class="parent">
+			<div class="child">DEMO</div>
+		</div>
+	</body>
+</html>

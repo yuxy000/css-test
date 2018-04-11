@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.parent {
+				display: table-cell;
+				
+				width: 200px;
+				height: 100px;
+				
+				text-align: center;
+				vertical-align: middle;
+				
+				background-color: gray;
+			}
+			
+			.child {
+				display: inline-block;
+				
+				padding: 10px;
+				
+				background-color: lightblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child">
+				测试文字
+			</div>
+		</div>
+		<p>
+			在父元素设置text-align和vertical-align，并将父元素设置为table-cell元素，子元素设置为inline-block元素
+			<br />
+　　		[注意]若兼容IE7-浏览器，将结构改为&lt;table&gt;结构来实现table-cell的效果；用display:inline;zoom:1;来实现inline-block的效果
+		</p>
+	</body>
+</html>

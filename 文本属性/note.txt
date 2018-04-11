@@ -1,0 +1,60 @@
+文本缩进
+	text-indent 用于块级元素
+水平对应
+	text-align 用于块级元素
+垂直对齐
+	行高
+		line-height
+		使用缩放因子解决继承问题
+	vertical-align 用于行内元素和表单元格 不能继承
+		baseline 基准对齐
+		sub 下标
+		super 上标
+		bottom 行内框底端对齐
+		text-bottom 行内文本底端对齐
+		top
+		text-top
+		center
+		百分比	 正百分比：元素基于基线升高 
+		长度对齐
+字间隔和字母间隔
+	字间隔
+		word-spacing 正负长度值， normal==0
+	字母间隔
+		letter-spacing  正负长度值， normal==0
+文本转换
+	text-transform
+		uppercase 转为大写
+		lowercase 转为小写
+		capitalize	对每个单词的首字母大写
+文本装饰 不能继承
+	text-decoration default： none
+		underline 下划线
+		overline	上划线
+		line-through	贯穿线
+		blink	闪烁 （不支持）
+		一个规则多装饰 a {text-decoration: underline overline}
+文本阴影 default：none
+	text-shadow
+		xoffset yoffset blur color ||
+		color xoffset yoffset blur 
+处理空白符 default：normal
+	white-space
+		值				空白符		换行符		自动换行
+		normal 		合并			忽略			允许
+		no-wrap 	合并			忽略			不允许
+		pre			保留			保留			不允许
+		pre-wrap 	保留			保留			允许
+		pre-line	 	合并			保留			允许
+文本方向
+	direction
+		ltr default
+		rtl
+		影响块级元素中文本的书写方向、表中列布局的方向，内容水平填充极其元素框的方向，以及两端对齐元素中最后一行的位置
+unicode-bidi
+	normal
+	embed
+	bidi-override		
+
+
+ 

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul.breadcrumb {
+				display: inline-block;
+				margin: 0;
+				padding: 0;
+			}
+			
+			ul.breadcrumb li {
+				display: inline;
+			}
+			
+			ul.breadcrumb li+li:before {
+				padding: 8px;
+				color: #000000;
+				content: "/\00a0";
+			}
+			
+			ul.breadcrumb li a {
+				color: green;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>面包屑导航</h2>
+		<ul class="breadcrumb">
+			<li>
+				<a href="#">首页 </a>
+			</li>
+			<li>
+				<a href="#">前端 </a>
+			</li>
+			<li>
+				<a href="#">HTML 教程</a>
+			</li>
+			<li>HTML 段落</li>
+		</ul>
+	</body>
+
+</html>

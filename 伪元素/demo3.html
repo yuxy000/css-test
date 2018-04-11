@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			.box {
+				position: relative;
+				margin: 30px auto 0;
+				width: 300px;
+			}
+			
+			.box-img {
+				position: absolute;
+				z-index: 1;
+				border: 5px solid gray;
+			}
+			
+			.box:before, .box:after {
+				content: url(../img/guanwangtai.jpg);
+				position: absolute;
+				background-color: #d5b07c;
+				width: 300px;
+				height: 200px;
+				border: 5px solid gray;
+			}
+			
+			.box:before {
+				left: -10px;
+				top: 0;
+				-webkit-transform: rotate(-5deg);
+				transform: rotate(-5deg);
+			}
+			.box:after {
+				left: 0;
+				top: 0;
+				-webkit-transform: rotate(4deg);
+				transform: rotate(4deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<img src="../img/guanwangtai.jpg" alt="图片叠加效果" class="box-img" />
+		</div>
+	</body>
+</html>

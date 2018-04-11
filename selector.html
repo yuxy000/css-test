@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		/*所有後代元素*/
+			div span{
+				background: goldenrod;
+			}
+			/*子元素*/
+			div > h2{
+				background: lightblue;
+			}
+		/*相鄰兄弟元素*/
+			div + p {
+				background: red;
+			}
+			/*普通相邻兄弟元素*/
+			h2 ~ p {
+				background: green;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Welcome to My Homepage</h1>
+
+		<div>
+			<p>I live in Duckburg.</p>
+			<h2>My name is Donald</h2>
+			<p>I live in Duckburg.</p>
+			<div>
+				<span>I live in Duckburg. div div span</span>
+			</div>
+			<span>I live in Duckburg.</span>
+			<p>I live in Duckburg.</p>
+			<p>I live in Duckburg.</p>
+		</div>
+
+		<p>My best friend is Mickey.</p>
+
+		<p>I will not be styled.</p>
+	</body>
+
+</html>

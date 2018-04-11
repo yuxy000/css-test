@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body {
+				width: 100%;
+				height: 100%;
+			}
+			body, p {
+				margin: 0;
+			}
+			
+			.parent {
+				overflow: hidden;
+				zoom: 1;
+				height: 100%;
+				background-color: lightgrey;
+			}
+			
+			.left {
+				position: relative;
+				float: left;
+				width: 160px;
+				height: 100%;
+				
+				background-color: rgba(0,0,0,.1);
+			}
+			
+			.right-wrap {
+				float: left;
+				width: 100%;
+				height: 100%;
+				margin-left: -160px;
+			}	
+		
+			.right {
+				margin-left: 180px;
+				height: 100%;
+				background-color: lightgreen;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>left</p>
+			</div>
+			<div class="right-wrap">
+				<div class="right">
+				<p>right</p>
+				<p>right</p>
+				(fix)代表增加结构，为了解决上述方法中的两个缺点，可以通过增加结构来实现。自适应的一列外侧增加一层结构.rightWrap并设置浮动。要实现自适应效果，.rightWrap宽度必须设置为100%。若不设置，float后的元素宽度将由内容撑开。同时再配合盒模型属性的计算，设置计算后的负margin值，使两列元素在同一行显示。同时两列之间的间距由.right的margin值确定。由于右侧元素会层叠在左侧元素之上，.left需要使用relative来提升层级
+			</div>
+			</div>
+			
+		</div>
+	</body>
+</html>

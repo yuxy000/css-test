@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/* 三道杠 */
+			
+			.box {
+				color: red;
+				width: 60px;
+				height: 10px;
+				border-top: 30px double;
+				border-bottom: 10px solid;
+				-webkit-transition: all .5s;
+			}
+			
+			.box:hover {
+				color: pink;
+			}
+			
+			.box2 {
+				position: relative;
+				color: blue;
+				border: 4px solid;
+				width: 40px;
+				height: 40px;
+				-webkit-transition: color .5s;
+				transition: color .5s;
+			}
+			
+			.box2::before {
+				content: "";
+				position: absolute;
+				top: 15px;
+				left: 5px;
+				display: block;
+				width: 30px;
+				border-top: 10px solid;
+			}
+			
+			.box2::after {
+				content: "";
+				position: absolute;
+				top: 5px;
+				left: 15px;
+				display: block;
+				height: 30px;
+				border-left: 10px solid;
+			}
+			
+			.box3 {
+				width: 200px;
+				height: 100px;
+				padding: 10px;
+				border: 10px solid;
+				border-image: repeating-linear-gradient(-225deg, red 0, red 10px, transparent 10px, transparent 20px, #58a 20px, #58a 30px, transparent 30px, transparent 40px) 20;
+			}
+			
+			.box4 {
+				background-color: pink;
+				height: 100px;
+				width: 300px;
+				/*border-top: 1px solid red;*/
+				/*padding-top: 1em;*/
+				/*overflow: hidden;*/
+			}
+			
+			.box4 .inner {
+				margin-top: 1em;
+				background-color: lightblue;
+				border: 1px solid;
+			}
+			
+			.box5 {
+				background-color: lightgreen;
+				overflow: hidden;
+			}
+			
+			.box5 .void {
+				margin: 1em 0;
+				/*border: 1px solid;*/
+				/*padding: 2px;*/
+				/*height: 1px;*/
+			}
+			
+			.box6 {
+				position: relative;
+				width: 300px;
+				height: 200px;
+				background-color: pink;
+			}
+			
+			.box6 div {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				width: 100px;
+				height: 50px;
+				margin: auto;
+				background-color: lightgreen;
+			}
+			
+			.box7 {
+				width: 200px;
+				background-color: pink;
+			}
+			
+			.list {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				overflow: hidden;/*	清除浮动*/
+				margin-right: -10px;
+				
+			}
+			
+			.list:after {/*IE7不支持::after*/
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			.in {
+				float: left;
+				width: 60px;
+				height: 100px;
+				margin-right: 10px;
+				background-color: lightgreen;
+			}
+			
+			.float-test {
+				width: 300px;
+				height: 300px;
+				border: 1px solid;
+				
+			}
+			
+			.float-test .div1 {
+				float: left;
+				width: 50px;
+				height: 50px;
+				background-color: lightblue;
+				
+			}
+			
+			.float-test .div2 {
+				float: right;
+				width: 50px;
+				height: 100px;
+				background-color: lightgreen;
+			}
+			
+			.float-test .clear {
+				clear: right;
+				background-color: lightgoldenrodyellow;
+			}
+			
+			.position-test {
+				position: relative;
+				width: 200px;
+				height: 200px;
+				padding: 10px;
+				border: 2px solid;
+				background-color: pink;
+			}
+			
+			.position-test .p-in {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: 10px;
+				padding: 10px;
+				background-color: lightgreen	
+			}
+			
+			.f-box {
+				width: 100px;
+				height: 100px;
+				overflow: auto;
+			}
+			
+			.f-box .f-in {
+				display: inline-block;
+				width: 100%;
+				height: 200px;
+				background-color: pink;
+			}
+			
+			.f-box .close {
+				position: absolute;
+				margin: 0 0 0 -10px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="box"></div>
+		<br />
+		<div class="box2"></div>
+		<br />
+		<div class="box3" contenteditable="true">请修改文字</div>
+		<br />
+		<div class="box4">
+			<!--<span>sss</span>-->
+			<div class="inner">测试内容</div>
+		</div>
+		<br />
+		<div class="box5">
+			<div class="void"><span>ss</span></div>
+		</div>
+		<br />
+		<div class="box6">
+			<div></div>
+		</div>
+		<br />
+		<div class="box7">
+			<ul class="list">
+				<li class="in">1</li>
+				<li class="in">2</li>
+				<li class="in">3</li>
+			</ul>
+		</div>
+		
+		<br />
+		<div class="float-test">
+				<div class="div1">左浮动</div>
+				<div class="div2">
+					右浮动
+				</div>
+				<div class="clear">测试内容</div>
+		</div>
+		
+		<br />
+		<div class="position-test">
+			<div class="p-in">测试内容</div>
+		</div>
+		
+		<br />
+		<div class="f-box">
+				<div class="f-in">测试内容</div><span class="close">&times;</span>
+			
+		</div>
+	</body>
+
+</html>

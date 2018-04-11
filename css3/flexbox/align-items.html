@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.flex-container {
+				display: -webkit-flex;
+				display: flex;
+				width: 400px;
+				height: 250px;
+				background-color: lightgrey;
+				margin-bottom: 10px;
+			}
+			
+			.flex-container0 {
+				-webkit-align-items: stretch;
+				align-items: stretch;
+			}
+			
+			.flex-container1 {
+				-webkit-align-items: flex-start;
+				align-items: flex-start;
+			}
+			
+			.flex-container2 {
+				-webkit-align-items: flex-end;
+				align-items: flex-end;
+			}
+			
+			.flex-container3 {
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			
+			.flex-container4 {
+				-webkit-align-items: baseline;
+				align-items: baseline;
+			}
+			
+			.flex-item {
+				background-color: cornflowerblue;
+				width: 100px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>align-items: stretch;</h3>
+		<div class="flex-container flex-container0">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>align-items: flex-start;</h3>
+		<div class="flex-container flex-container1">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>align-items: flex-end;</h3>
+		<div class="flex-container flex-container2">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>align-items: center;</h3>
+		<div class="flex-container flex-container3">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>align-items: baseline;</h3>
+		<div class="flex-container flex-container4">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+	</body>
+</html>

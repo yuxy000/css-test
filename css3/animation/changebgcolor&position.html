@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				position: relative;
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				animation: yuFisrt 3s;
+				-webkit-animation: yuFisrt 3s;
+				-moz-animation: yuFirst 3s;
+				-ms-animation: yuFisrt 3s;
+			}
+			
+			@keyframes yuFisrt{
+				0% {background-color: red; left: 0; top: 0;}
+				25% {background-color: yellow; left: 200px; top: 0;}
+				50% {background-color: blue; left: 200px; top: 200px;}
+				75% {background-color: green; left: 0; top: 200px;}
+				100% {background-color: red; left: 0; top: 0;}
+			}
+			@-webkit-@keyframes yuFisrt{
+				0% {background-color: red; left: 0; top: 0;}
+				25% {background-color: yellow; left: 200px; top: 0;}
+				50% {background-color: blue; left: 200px; top: 200px;}
+				75% {background-color: green; left: 0; top: 200px;}
+				100% {background-color: red; left: 0; top: 0;}
+			}
+			@-moz-@keyframes yuFisrt{
+				0% {background-color: red; left: 0; top: 0;}
+				25% {background-color: yellow; left: 200px; top: 0;}
+				50% {background-color: blue; left: 200px; top: 200px;}
+				75% {background-color: green; left: 0; top: 200px;}
+				100% {background-color: red; left: 0; top: 0;}
+			}
+			@-ms-@keyframes yuFisrt{
+				0% {background-color: red; left: 0; top: 0;}
+				25% {background-color: yellow; left: 200px; top: 0;}
+				50% {background-color: blue; left: 200px; top: 200px;}
+				75% {background-color: green; left: 0; top: 200px;}
+				100% {background-color: red; left: 0; top: 0;}
+			}
+		</style>
+	</head>
+
+	<body>
+		<p><b>注意:</b> 该实例在 Internet Explorer 9 及更早 IE 版本是无效的。</p>
+
+		<div></div>
+		<p>注意: 您必须定义动画的名称和动画的持续时间。如果省略的持续时间，动画将无法运行，因为默认值是0。</p>
+	</body>
+
+</html>

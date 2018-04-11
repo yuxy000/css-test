@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.parent {
+				position: relative;
+				background-color: lightgreen;
+				height: 20px;
+			}
+			
+			.child-wrap {
+				position: absolute;
+				left: 50%;
+			}
+			
+			.child {
+				width: 50px;
+				margin-left: -50%;
+				background-color: lightblue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h4>
+			margin的百分比是相对于包含块的，所以需要增加一层&lt;div&gt;结构。由于宽度width的默认值是auto，当设置负margin时，width也会随着变大。所以此时需要定宽处理
+			<br />
+　　		[注意]虽然全兼容，但需要增加页面结构及定宽处理，所以限制了应用场景
+		</h4>
+		<div class="parent">
+			<div class="child-wrap">
+				<div class="child">DEMO</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

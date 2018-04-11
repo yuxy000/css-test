@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			p {
+				margin: 0;
+			}
+			
+			.parent {
+				overflow: hidden;
+				
+				background-color: lightgrey;
+			}
+			
+			.left, .center {
+				float: left;
+				width: 120px;
+				margin-right: 20px;
+			}
+			
+			.left {
+				background-color: lightblue;
+			}
+			
+			.right {
+				margin-left: 280px;
+				background-color: lightgreen;
+			}
+			
+			.center {
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>Left</p>
+			</div>
+			
+			<div class="center">
+				<p>Center</p>
+				<p>Center</p>
+			</div>
+			
+			<div class="right">
+				<p>Right</p>
+				<p>
+					缺点是IE6-浏览器的3px的bug，以及当自适应列中有元素清除浮动时，会使该元素不与左侧浮动元素同行，从而出现文字下沉现象
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

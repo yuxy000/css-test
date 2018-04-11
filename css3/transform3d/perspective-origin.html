@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#div1 {
+				position: relative;
+				width: 150px;
+				height: 150px;
+				margin: 50px;
+				padding: 10px;
+				border: 1px solid black;
+				
+				perspective: 150;
+				-webkit-perspective: 150;
+				-moz-perspective: 150;
+				-ms-perspective: 150;
+				
+				perspective-origin: 10% 10%;
+				-webkit-perspective-origin: 10% 10%;
+				-moz-perspective-origin: 10% 10%;
+				-ms-perspective-origin: 10% 10%;
+			}
+			
+			#div2 {
+				padding: 50px;
+				position: absolute;
+				border: 1px solid black;
+				background-color: red;
+				
+				transform: rotateX(45deg);
+				-webkit-transform: rotateX(45deg);
+				-moz-transform: rotateX(45deg);
+				-ms-transform: rotateX(45deg);
+			}
+		</style>
+	</head>
+
+	<body>
+		<h2>
+			perspective-origin 属性定义 3D 元素所基于的 X 轴和 Y 轴。该属性允许您改变 3D 元素的底部位置。
+			<br />
+			定义时的perspective -Origin属性，它是一个元素的子元素，透视图，而不是元素本身。
+			<br />
+			perspective-origin: x-axis y-axis;
+		</h2>
+		<div id="div1">
+			<div id="div2">HELLO</div>
+		</div>
+	</body>
+
+</html>

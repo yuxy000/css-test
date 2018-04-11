@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div1 {
+				width: 100px;
+				height: 100px;
+				background: red;
+				animation: myfirst 5s linear 0s infinite;
+				-webkit-animation: myfirst 5s linear 0s infinite;
+			}
+			
+			.div2 {
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: relative;
+				animation: mysecond 5s infinite;
+				-webkit-animation: mysecond 5s infinite;
+				animation-direction: alternate;
+				-webkit-animation-direction: alternate;
+			}
+			
+			@keyframes myfirst {
+				from {
+					background: red;
+					/*width: 100px;
+					height: 100px;*/
+				}
+				to {
+					background: yellow;
+					/*width: 300px;
+					height: 300px;*/
+				}
+			}
+			
+			@-webkit-keyframes myfirst {
+				from {
+					background: red;
+					/*width: 100px;
+					height: 100px;*/
+				}
+				to {
+					background: yellow;
+					/*width: 300px;
+					height: 300px;*/
+				}
+			}
+			
+			@keyframes mysecond {
+				0% {
+					background: red;
+					left: 0;
+					top: 0;
+				}
+				25% {
+					background: yellow;
+					left: 200px;
+					top: 0;
+				}
+				50% {
+					background: blue;
+					left: 200px;
+					top: 200px;
+				}
+				75% {
+					background: blue;
+					left: 0px;
+					top: 200px;
+				}
+				100% {
+					background: green;
+					left: 0;
+					top: 0;
+				}
+			}
+			
+			@-webkit-keyframes mysecond {
+				0% {
+					background: red;
+					left: 0;
+					top: 0;
+				}
+				25% {
+					background: yellow;
+					left: 200px;
+					top: 0;
+				}
+				50% {
+					background: blue;
+					left: 200px;
+					top: 200px;
+				}
+				75% {
+					background: blue;
+					left: 0px;
+					top: 200px;
+				}
+				100% {
+					background: green;
+					left: 0;
+					top: 0;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<p><b>注意:</b> 该实例在 Internet Explorer 9 及更早 IE 版本是无效的。</p>
+
+		<div class="div1"></div>
+		<br />
+		<div class="div2"></div>
+	</body>
+
+</html>

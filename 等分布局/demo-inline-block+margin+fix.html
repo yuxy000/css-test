@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			.parent-wrap {
+				overflow: hidden;
+			}
+			
+			.parent {
+				margin-right: -20px;
+				font-size: 0;
+				overflow: hidden;
+			}
+			
+			.child {
+				display: inline-block;
+				vertical-align: top;
+				width: 25%;
+				font-size: 16px;
+			}
+			
+			.in {
+				margin-right: 20px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent-wrap">
+			<div class="parent" style="background-color: lightgrey;">
+				<div class="child" style="background-color: blue;">
+					<div class="in" style="background-color:lightblue;">1</div>
+				</div>
+				<div class="child" style="background-color: green;">
+					<div class="in" style="background-color:lightgreen;">2</div>
+				</div>
+				<div class="child" style="background-color: orange;">
+					<div class="in" style="background-color:lightsalmon;">3</div>
+				</div>
+				<div class="child" style="background-color: red;">
+					<div class="in" style="background-color:pink;">4</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

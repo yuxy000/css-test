@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			h1 {
+				text-shadow: 5px 5px 5px #ff0000;
+			}
+			
+			.test {
+				width: 11em;
+				border: 1px solid black;
+				word-break: break-word;
+			}
+			
+			.test1{
+				white-space: nowrap;
+				width: 12em;
+				overflow: hidden;
+				border: 1px solid #000000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1>Text-shadow effect!</h1>
+
+		<p class="test"> This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+		<p>The following two divs contains a long text that will not fit in the box. As you can see, the text is clipped.</p>
+		<p>This div uses &quot;text-overflow:ellipsis&quot;:</p>
+
+		<div class="test1" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+		<p>This div uses &quot;text-overflow:clip&quot;:</p>
+		<div class="test1" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+		<p><b>Note:</b> Internet Explorer 9 and earlier versions, does not support the text-shadow property.</p>
+	</body>
+
+</html>

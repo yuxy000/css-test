@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.p1:first-line{
+				color: blue;
+				font-variant: small-caps;
+			}
+			.p1:first-letter{
+				color: red;
+				font-size: xx-large;
+			}
+			p.p2:first-letter{
+				color: red;
+				font-size: xx-large;
+				background: green;
+			}
+			h1:before{
+				content: url(img/1.jpg);
+			}
+			h1:after{
+				content: attr(data-before);
+			}
+			
+			div:after {
+				content: '\2018sss\2018\Assss\201C aaa\201D';
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1 data-before = " ddd">This is a heading</h1>
+		<p class="p1">You can use the :first-line seudo-element to add a special effect to the first line of a text. You can use the :first-line seudo-element to add a special effect to the first line of a text. You can use the :first-line seudo-element to add a special
+			effect to the first line of a text.</p>
+			<p class="p2">You can use the :first-letter pseudo-element to add a special effect to the first character of a text!</p>
+		
+		<div>
+			我是测试文字
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				border: 5px solid transparent;
+				padding: 10px 20px;
+				width: 80px;
+				-webkit-border-image: url(../../img/button.png) 10 10 stretch;
+				-o-border-image: url(../../img/button.png) 10 10 stretch;
+				border-image: url(../../img/button.png) 10 10 stretch;
+				background-color: transparent;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<p> 
+			border-image 属性用于设置图片的边框。
+			<br />
+			border-image: source slice width outset repeat|initial|inherit;
+			<br />
+			border-image-source	用于指定要用于绘制边框的图像的位置
+			<br />
+			border-image-slice	图像边界向内偏移
+			<br />
+			border-image-width	图像边界的宽度
+			<br />
+			border-image-outset	用于指定在边框外部绘制 border-image-area 的量
+			<br />
+			border-image-repeat	用于设置图像边界是否应重复（repeat）、拉伸（stretch）或铺满（round）。
+		</p>
+		<div id="imageBtn">Search</div>
+		
+
+		<p>这是我们使用的图片素材：</p>
+		<img src="../../img/button.png" />
+	</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.parent {
+				display: table-cell;
+				
+				width: 200px;
+				height: 100px;
+				vertical-align: middle;
+				background-color: gray;
+			}
+			
+			.child {
+				display: table;
+				margin: 0 auto;
+				
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child">
+				测试文字
+			</div>
+		</div>
+		<p>
+			要想在父元素中设置vertical-align，须设置为table-cell元素；要想让margin:0 auto实现水平居中的块元素内容撑开宽度，须设置为table元素。而table元素是可以嵌套在tabel-cell元素里面的，就像一个单元格里可以嵌套一个表格
+			<br />
+　　		[注意]若兼容IE7-浏览器，需将结构改为&lt;table&gt;结构
+		</p>
+	</body>
+</html>

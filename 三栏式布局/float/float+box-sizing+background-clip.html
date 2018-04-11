@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body {
+				height: 100%;
+			}
+			
+			body, p {
+				margin: 0;
+			}
+			
+			.top, .bottom {
+				height: 60px;
+			}
+			
+			.middle {
+				overflow: hidden;
+			}
+			
+			.main {
+				float: left;
+				width: 100%;
+				border-left: 120px solid lightgrey;
+				border-right: 120px solid lightgrey;
+				padding: 0 20px;
+				background-clip: content-box;
+				box-sizing: border-box;
+			}
+			
+			.left, .right {
+				float: left;
+				width: 120px;
+			}
+			
+			.left {
+				margin-left: -100%;
+			}
+			
+			.right {
+				margin-left: -120px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent" id="parent" style="background-color: lightgrey;">
+			<div class="top" style="background-color: lightblue;">
+				<p>Top</p>
+			</div>
+			
+			<div class="middle" style="background-color: pink;">
+				<div class="main" style="background-color: lightcoral;">
+					<p>Main</p>
+					<p>Main</p>
+					<p>
+						.main元素的border区域为两侧定宽列的所在区域，实现伪等高效果；
+						设置.main的padding和background-clip来实现元素间隔。
+						两侧元素通过负margin调整到.main元素的border区域
+						<br />
+　　					缺点: 兼容性不好
+					</p>
+				</div>
+				<div class="left">
+					<p>Left</p>
+				</div>
+				<div class="right">
+					<p>Right</p>
+				</div>
+			</div>
+			
+			<div class="bottom" style="background-color: lightgreen;">
+				Bottom
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body {
+				width: 100%;
+				height: 100%;
+			}
+			body, p {
+				margin: 0;
+			}
+			
+			.parent {
+				overflow: hidden;
+				zoom: 1;
+				height: 100%;
+				background-color: lightgrey;
+			}
+			
+			.left {
+				float: left;
+				width: 160px;
+				height: 100%;
+				
+				background-color: lightblue;
+			}
+			
+			.right {
+				margin-left: 180px;
+				height: 100%;
+				background-color: lightgreen;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>left</p>
+			</div>
+			
+			<div class="right">
+				<p>right</p>
+				<p>[缺点1]IE6-浏览器下3像素bug，具体表现在右侧首行文字会向右偏移3px。解决办法是在left元素上设置margin-right: -100px</p>
+				
+				[缺点2]当右侧容器中有元素清除浮动时，会使该元素不与左侧浮动元素同行，从而出现文字下沉现象
+			</div>
+		</div>
+	</body>
+</html>

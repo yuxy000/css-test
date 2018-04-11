@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			p {
+				margin: 0;
+			}
+			
+			.parent {
+				display: flex;
+				background-color: lightgrey;
+			}
+			
+			.left, .center {
+				margin-right: 20px;
+			}
+			
+			.left {
+				background-color: lightblue;
+			}
+			
+			.center {
+				background-color: pink;
+			}
+			
+			.right {
+				flex: 1;
+				
+				background-color: lightgreen;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>LeftLeft</p>
+			</div>
+			
+			<div class="center">
+				<p>CenterCenterCenter</p>
+				<p>Center</p>
+			</div>
+			
+			<div class="right">
+				<p>Right</p>
+				
+			</div>
+		</div>
+	</body>
+</html>

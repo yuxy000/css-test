@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p {
+				margin: 0;
+			}
+			
+			.parent {
+				overflow: hidden;
+				zoom: 1;
+				
+				background-color: lightgrey;
+			}
+			
+			.left {
+				float: left;
+				margin-right: 20px;
+				
+				background-color: lightblue;
+			}
+			
+			.right {
+				overflow: hidden;
+				zoom: 1;
+				
+				background-color: lightgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>LeftLeftLeftLeftLeftLeft</p>
+			</div>
+			
+			<div class="right">
+				<p>Right</p>
+				<p>Right</p>
+				<p>
+					在单列定宽单列自适应的两列布局中，经常用float和负margin配合实现布局效果。
+					但由于margin取值只能是固定值，所以在两列都是自适应的布局中就不再适用。
+					而float和overflow配合可实现两列自适应效果。
+					使用overflow属性来触发bfc，来阻止浮动造成的文字环绕效果。
+					由于设置overflow:hidden并不会触发IE6-浏览器的haslayout属性，所以需要设置zoom:1来兼容IE6-浏览器
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

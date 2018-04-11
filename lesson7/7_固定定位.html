@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div1{
+            width: 400px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .div2{
+            width: 300px;
+            height: 300px;
+            background: blue;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        /*
+            position: fixed; 固定定位
+            a.使元素完全脱离文档流
+            b.使内嵌元素支持宽高
+            c.块元素标签内容撑开宽度
+            e.始终相对整个文档进行定位
+
+            问题
+                IE6不支持固定定位
+        */
+    </style>
+</head>
+<body>
+<div class="div1">position:absolute; 绝对定位</div>
+<div style="width: 200px;height: 200px;border: 5px solid black;position: relative">
+    <div class="div2">position: fixed; 固定定位</div>
+</div>
+
+</body>
+</html>

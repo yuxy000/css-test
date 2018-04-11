@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			body,
+			p {
+				margin: 0;
+			}
+			
+			.parent {
+				position: relative;
+			}
+			
+			.center {
+				box-sizing: border-box;
+				padding: 0 20px;
+				background-clip: content-box;
+				border-left: 200px solid lightblue;
+				border-right: 200px solid lightgreen;
+			}
+			
+			.left {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 200px;
+			}
+			
+			.right {
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 200px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="parent" style="background-color: lightgrey;">
+			<div class="left">
+				<p>left</p>
+
+			</div>
+			<div class="center" style="background-color: pink;">
+				<p>center</p>
+				<p>center</p>
+				<p>
+					因为元素边框和元素高度始终是相同高度，用元素的边框颜色来伪装左右两个兄弟元素的背景色。然后将左右两个透明背景的元素使用absolute覆盖在中间元素的左右边框上，实现视觉上的等高效果
+					<br />
+					[注意]左右两侧元素的内容高度不能大于中间元素内容高度，否则无法撑开容器高度
+				</p>
+			</div>
+			<div class="right">
+				<p>right</p>
+			</div>
+		</div>
+	</body>
+
+</html>

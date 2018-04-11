@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.div1 {
+				border: 2px solid #a1a1a1;
+				padding: 10px 14px;
+				background: #dddddd;
+				width: 300px;
+				/*border-radius: 25px;*/
+				border-top-right-radius: 25px;
+				border-bottom-left-radius: 25px;
+			}
+			
+			.div2 {
+				width: 300px;
+				height: 100px;
+				background-color: yellow;
+				box-shadow: 4px 4px 8px #888888;
+			}
+			
+			.div2 ~ div {
+				width: 250px;
+				padding: 10px 20px;
+				border: 15px solid transparent;
+			}
+			
+			.div_img {
+				border-radius: 25px;
+				background: url(img/paper.gif);
+				background-position: left top;
+				background-repeat: repeat;
+				padding: 25px;
+				width: 200px;
+			}
+			
+			#round {
+				-webkit-border-image: url(img/border.png) 30 30 round;
+				-moz-border-image: url(img/border.png) 30 30 round;
+				border-image: url(img/border.png)30 30 round;
+			}
+			
+			#stretch {
+				-webkit-border-image: url(img/border.png) 30 30 stretch;
+				-moz-border-image: url(img/border.png) 30 30 stretch;
+				border-image: url(img/border.png) 30 30 stretch;
+			}
+			
+			#repeat {
+				-webkit-border-image: url(img/border.png) 30 30 repeat;
+				-moz-border-image: url(img/border.png) 30 30 repeat;
+				border-image: url(img/border.png) 30 30 repeat;
+			}
+			
+			#div3 {
+				border: 14px solid transparent;
+				-webkit-border-image: url(img/border.png);
+				-moz-border-image: url(img/border.png);
+				border-image: url(img/border.png);
+				border-image-slice: 27;
+			}
+			
+			.rcorners {
+				background: #8ac007;
+				padding: 20px;
+				width: 200px;
+				height: 150px;
+			}
+			
+			#rcorners1 {
+				border-radius: 25px;
+			}
+			
+			#rcorners2 {
+				border-radius: 25px;
+				background: none;
+				border: 2px solid #8ac007;
+			}
+			
+			#rcorners3 {
+				background: url(img/paper.gif);
+				background-position: left top;
+				border-radius: 25px;
+			}
+			
+			#rcorners4{
+				border-radius: 15px 50px 30px 5px;
+			}
+			
+			#rcorners5{
+				border-radius: 15px 50px 30px;
+			}
+			
+			#rcorners6{
+				border-radius: 15px 50px;
+			}
+			
+			#rcorners7 {
+				border-radius: 50px/15px;
+			}
+			
+			#rcorners8 {
+				border-radius: 15px/50px;
+			}
+			
+			#rcorners9 {
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="div1">border-radius 属性允许您为元素添加圆角边框！ </div>
+		<br />
+		<br />
+		<div class="div_img">
+
+		</div>
+		<br />
+		<br />
+
+		<div class="div2">
+		</div>
+		<br />
+		<br />
+		<p><b>注意: </b> Internet Explorer 不支持 border-image 属性。</p>
+		<p> border-image 属性用于设置图片的边框。</p>
+
+		<div id="div3">这里，图像平铺（重复）来填充该区域。</div>
+		<br>
+
+		<div id="round">这里，图像平铺（重复）来填充该区域。</div>
+		<br>
+		<div id="stretch">这里，图像被拉伸以填充该区域。</div>
+		<br />
+		<div id="repeat">这里，图像被repeat以填充该区域。</div>
+
+		<p> border-radius 属性允许向元素添加圆角。</p>
+		<p>指定背景颜色元素的圆角:</p>
+		<p id="rcorners1" class="rcorners">圆角</p>
+		
+		<p>指定边框元素的圆角:</p>
+		<p id="rcorners2" class="rcorners">圆角</p>
+		
+		<p>指定背景图片元素的圆角:</p>
+		<p id="rcorners3" class="rcorners">圆角</p>
+		
+		<p>四个值 - border-radius: 15px 50px 30px 5px:</p>
+		<p id="rcorners4" class="rcorners"></p>
+
+		<p>三个值 - border-radius: 15px 50px 30px:</p>
+		<p id="rcorners5" class="rcorners"></p>
+
+		<p>两个值 - border-radius: 15px 50px:</p>
+		<p id="rcorners6" class="rcorners"></p>
+		
+		<p>椭圆边框 - border-radius: 50px/15px:</p>
+		<p id="rcorners7" class="rcorners"></p>
+
+		<p> 椭圆边框 - border-radius: 15px/50px:</p>
+		<p id="rcorners8" class="rcorners"></p>
+
+		<p>椭圆边框 - border-radius: 50%:</p>
+		<p id="rcorners9" class="rcorners"></p>
+	</body>
+
+</html>

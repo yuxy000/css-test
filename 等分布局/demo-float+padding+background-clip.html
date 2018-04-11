@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			.parent-wrap {
+				overflow: hidden;
+			}
+			
+			.parent {
+				margin-right: -20px;
+				overflow: hidden;
+			}
+			
+			.child {
+				float: left;
+				height: 100px;
+				width: 25%;
+				padding-right: 20px;
+				box-sizing: border-box;
+				background-clip: content-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent-wrap">
+			<div class="parent" style="background-color: lightgrey;">
+				<div class="child" style="background-color:lightblue;">1</div>
+				<div class="child" style="background-color:lightgreen;">2</div>
+				<div class="child" style="background-color:lightsalmon;">3</div>
+				<div class="child" style="background-color:pink;">4</div>
+			</div>
+		</div>
+	</body>
+</html>

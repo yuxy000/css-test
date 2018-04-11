@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clear{
+            zoom: 1;
+        }
+        .clear:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .wrap{
+            width:500px;
+            margin: 0 auto;
+            border: 10px solid #ccc;
+        }
+
+        .left{
+            width: 200px;
+            height: 400px;
+            background: #7a1;
+            float: left;
+        }
+
+        .right{
+            width: 300px;
+            float: right;
+        }
+        .right_top{
+            height: 80px;
+            background: #f90;
+        }
+        .right_center div{
+            width: 150px;
+            height: 160px;
+            float: left;
+            background: #f69;
+        }
+        .right_center .right_center_2{
+            background: #efc;
+        }
+        .right_bottom{
+            clear: left;
+            height: 160px;
+            background: #369;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap clear">
+        <div class="left"></div>
+        <div class="right">
+            <div class="right_top"></div>
+            <div class="right_center">
+                <div class="right_center_1"></div>
+                <div class="right_center_2"></div>
+            </div>
+            <div class="right_bottom"></div>
+        </div>
+    </div>
+</body>
+</html>

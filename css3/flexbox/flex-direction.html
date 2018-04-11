@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.flex-container {
+				display: -webkit-flex;
+				display: flex;
+				width: 400px;
+				height: 250px;
+				background-color: lightgrey;
+				margin-bottom: 10px;
+			}
+			
+			.flex-container1 {
+				-webkit-flex-direction: row-reverse;
+				flex-direction: row-reverse;
+			}
+			
+			.flex-container2 {
+				-webkit-flex-direction: column;
+				flex-direction: column;
+			}
+			
+			.flex-container3 {
+				-webkit-flex-direction: column-reverse;
+				flex-direction: column-reverse;
+			}
+			
+			.flex-item {
+				background-color: cornflowerblue;
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="flex-container flex-container1">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<div class="flex-container flex-container2">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<div class="flex-container flex-container3">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+	</body>
+</html>

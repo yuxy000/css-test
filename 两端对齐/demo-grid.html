@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			.list {
+				width: 200px;
+				line-height: 30px;
+				overflow: hidden;
+				border: 1px solid gray;
+				background-color: lightgreen;
+				display: -webkit-grid;
+				display: -moz-grid;
+				display: -ms-grid;
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+				grid-auto-flow: column;
+			}
+			
+			.in {
+				padding: 0 10px;
+				background-color: lightblue;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ul class="list">
+			<li class="in">内容</li>
+			<li class="in">样式</li>
+			<li class="in">行为</li>
+		</ul>
+		<p>display:grid无法实现两端对齐</p>
+	</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,h3,ul,p{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+            font-family: "宋体";
+        }
+        li{
+            list-style: none;
+        }
+        img{
+            border: none;
+            vertical-align: top;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .clear{
+            zoom: 1;
+        }
+        .clear:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .wrap{
+            width: 600px;
+            margin: 30px auto;
+        }
+        .header{
+            height: 30px;
+            background: #eaf9fe;
+            padding: 0 10px;
+        }
+        .title{
+            font-size: 14px;
+            line-height: 30px;
+            float: left;
+        }
+        .headerList{
+            float: right;
+        }
+        .headerList li{
+            float: left;
+            vertical-align: top;
+            line-height: 30px;
+            padding-left: 12px;
+        }
+        .headerList a{
+            color: #666666;
+        }
+
+        .content{
+            margin-top: 15px;
+        }
+        .content .left{
+            float: left;
+        }
+        .content .leftTop h3{
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .content .leftTop .dec{
+            margin-top: 1px;
+        }
+        .content .leftTop span{
+            padding-left: 19px;
+            line-height: 14px;
+            display: inline-block;
+        }
+        .content .leftTop .tv{
+            background: url("img/decBg1.gif") no-repeat;
+            padding-right: 14px;
+        }
+        .play{
+            margin-top: 2px;
+            background: url("img/playBg.gif") no-repeat;
+            color: #bfbfbf;
+        }
+        .chat{
+            margin-top: 2px;
+            background: url("img/chatBg.gif") no-repeat;
+            color: #bfbfbf;
+        }
+        .left .leftMiddleList{
+            padding-top: 8px;
+        }
+        .left .leftMiddleList li{
+            background: url("img/liBg.gif") no-repeat 0 9px;
+            line-height: 20px;
+            padding-left: 8px;
+        }
+
+        .left .leftBottom{
+            display: inline-block;
+            line-height: 40px;
+            color: #909090;
+        }
+        .right{
+            float: right;
+            width: 286px;
+        }
+        .right li{
+            float: left;
+            padding-bottom: 12px;
+        }
+        .right li:nth-child(2n){
+            padding-left: 29px;
+        }
+
+        .right .pic{
+            position: relative;
+        }
+
+        .right .pic span{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 17px;
+            line-height: 17px;
+            padding-left: 1px;
+            background: rgba(0,0,0,0.7) url("img/ico.png") no-repeat 99px 1px;
+            /*opacity: 0.5;*/
+            /*filter:alpha(opacity=50);*/
+            color: #fff;
+        }
+        .right li h3{
+            margin-top: 3px;
+            line-height: 26px;
+            font-size: 12px;
+        }
+        .right .dec span{
+            padding-left: 19px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap clear">
+        <div class="header">
+            <h3 class="title">今日头条</h3>
+            <ul class="headerList">
+                <li><a href="#">热点</a></li>
+                <li><a href="#">深度</a></li>
+                <li><a href="#">青春季</a></li>
+            </ul>
+        </div>
+        <div class="content clear">
+            <div class="left">
+                <div class="leftTop">
+                    <a href="">
+                        <img src="img/leftPic.gif" alt="">
+                    </a>
+                    <h3>实拍二炮跨区联合演习 千里机动发射导弹</h3>
+                    <div class="dec">
+                        <span class="tv">
+                            安徽卫视
+                        </span>
+                        <span class="play">486,732</span>
+                        <span class="chat">3,385</span>
+                    </div>
+                </div>
+                <ul class="leftMiddleList">
+                    <li>
+                        <a href="#">[热点]中国将提交东海划界案 大陆架延伸到冲绳海槽</a>
+                    </li>
+                    <li>
+                        <a href="#">[热点]中国将提交东海划界案 大陆架延伸到冲绳海槽</a>
+                    </li>
+                    <li>
+                        <a href="#">[热点]中国将提交东海划界案 大陆架延伸到冲绳海槽</a>
+                    </li>
+                    <li>
+                        <a href="#">[热点]中国将提交东海划界案 大陆架延伸到冲绳海槽</a>
+                    </li>
+                </ul>
+                <span class="leftBottom">
+                    深度阅读:
+                    <a href="#">军演</a>
+                </span>
+            </div>
+            <ul class="right">
+                <li>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/pic.gif" alt="">
+                        </a>
+                        <span>原拟10月赴花</span>
+                    </div>
+                    <h3>日本新任驻华大使病逝</h3>
+                    <div class="dec">
+                        <span class="play">486,732</span>
+                        <span class="chat">3,385</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/pic.gif" alt="">
+                        </a>
+                        <span> 原拟10月赴花</span>
+                    </div>
+                    <h3>日本新任驻华大使病逝</h3>
+                    <div class="dec">
+                        <span class="play">486,732</span>
+                        <span class="chat">3,385</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/pic.gif" alt="">
+                        </a>
+                        <span>原拟10月赴花</span>
+                    </div>
+                    <h3>日本新任驻华大使病逝</h3>
+                    <div class="dec">
+                        <span class="play">486,732</span>
+                        <span class="chat">3,385</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/pic.gif" alt="">
+                        </a>
+                        <span>原拟10月赴花</span>
+                    </div>
+                    <h3>日本新任驻华大使病逝</h3>
+                    <div class="dec">
+                        <span class="play">486,732</span>
+                        <span class="chat">3,385</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/pic.gif" alt="">
+                        </a>
+                        <span>原拟10月赴花</span>
+                    </div>
+                    <h3>日本新任驻华大使病逝</h3>
+                    <div class="dec">
+                        <span class="play">486,732</span>
+                        <span class="chat">3,385</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="pic">
+                        <a href="#">
+                            <img src="img/pic.gif" alt="">
+                        </a>
+                        <span>原拟10月赴花</span>
+                    </div>
+                    <h3>日本新任驻华大使病逝</h3>
+                    <div class="dec">
+                        <span class="play">486,732</span>
+                        <span class="chat">3,385</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

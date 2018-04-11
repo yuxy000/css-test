@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body, .parent {
+				height: 100%;
+			}
+			
+			body, p {
+				margin: 0;
+			}
+			
+			.top, .bottom {
+				position: absolute;
+				height: 60px;
+				left: 0;
+				right: 0;
+			}
+			
+			.top {
+				top: 0;
+			}
+			
+			.bottom {
+				bottom: 0;
+			}
+			
+			.middle-wrap {
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.middle {
+				height: 100%;
+				margin: 60px 0;
+			}
+			
+			.left {
+				float: left;
+				width: 160px;
+				margin-right: 20px;
+				height: 100%;
+			}
+			
+			.right {
+				overflow: auto;
+				height: 100%;
+			}
+			
+			.right-in {
+				height: 1000px;
+			}
+			
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="parent" id="parent" style="background-color:lightgrey;">
+			<div class="top" style="background-color:lightblue">
+				<p>Top</p>
+			</div>
+			
+			<div class="middle-wrap">
+				<div class="middle" style="background-color:pink;">
+					<div class="left" style="background-color:orange;">
+						<p>Left</p>
+					</div>
+					<div class="right" style="background-color:lightsalmon;">
+						<div class="right-in">
+							<p>Right</p>
+							<p>
+								通过增加结构来提高兼容性，.middle元素设置100%的高度，.top和.bottom设置absolute覆盖在.middle上
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bottom" style="background-color:lightgreen;">
+				<p>Bottom</p>
+			</div>
+		</div>
+	</body>
+
+</html>

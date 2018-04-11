@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body {
+				width: 100%;
+				height: 100%;
+			}
+			body, p {
+				margin: 0;
+			}
+			
+			.parent {
+				position: relative;
+				height: 100%;
+				background-color: lightgrey;
+			}
+			
+			.left {
+				position: absolute;
+				left: 0;
+				width: 160px;
+				height: 100%;
+				
+				background-color: lightblue;
+			}
+			
+			.right {
+				position: absolute;
+				left: 180px;
+				right: 0;
+				height: 100%;
+				background-color: lightgreen;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>left</p>
+			</div>
+			
+			<div class="right">
+				<p>right</p>
+				<p>absolute布局的缺点是由于父元素需要设置为relative，且子元素设置为absolute，所以父元素的高度并不是由子元素撑开的，需要单独设置。</p>
+				<p>[注意]IE6-不支持相对的偏移属性同时设置</p>
+				
+			</div>
+		</div>
+	</body>
+</html>

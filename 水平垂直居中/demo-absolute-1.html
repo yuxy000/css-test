@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.parent {
+				position: relative;
+				width: 200px;
+				height: 100px;
+
+				background-color: gray;
+			}
+			
+			.child {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				width: 80px;
+				height: 50px;
+				
+				margin: auto;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child">
+				测试文字
+			</div>
+		</div>
+		<p>
+			利用绝对定位元素的盒模型特性，在偏移属性为确定值的基础上，设置margin:auto
+		</p>
+	</body>
+</html>

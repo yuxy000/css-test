@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			p{
+				font-size: 18px;
+				text-decoration:blink;
+				color: red;
+				text-decoration: underline;
+			}
+			
+			span {
+				vertical-align: super;
+				font-size: 10px;
+				color: #0000FF;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<p>
+			a<span>2</span> + b<span>2</span> = c<span>2</span>
+		</p>
+		<div class="search" >
+				<label class=" col-sm-1 control-label" style="float: left;">类别</label>
+				<div class="col-sm-1" style="float: left;">
+					<select name="_query.type" class="combox">
+						<option value="">全部</option>
+						<option value="1" ${type! == "1" ? "selected":"" }>收入</option>
+						<option value="2" ${type! == "2" ? "selected":"" }>支出</option>
+					</select>
+				</div>
+				<label class=" col-sm-1 control-label" style="float: left;">日期</label>
+				<div class="col-sm-1 input-group" style="float: left;">
+					  		<input type="text" name="_query.start_date" readonly value='${escapeXml(start_date!)}'
+					  			 data-date-format="yyyy-mm-dd" data-date-viewmode="years" class="form-control date-picker">
+							<span class="input-group-addon"> <i class="fa fa-calendar"></i> </span>
+				</div>
+				<div class="col-sm-1 input-group" style="float: left;">
+				<input type="text" name="_query.end_date" readonly value='${escapeXml(end_date!)}'
+					  			 data-date-format="yyyy-mm-dd" data-date-viewmode="years" class="form-control date-picker">
+							<span class="input-group-addon"> <i class="fa fa-calendar"></i> </span>
+				</div>
+				<div class="col-sm-2" style="float: left;">
+					<button type="button" class="btn btn-primary"
+						onclick='common_ajax.ajaxFormDiv("divDetail","splitPage")'>查询</button>
+				</div>
+			</div>
+	</body>
+</html>

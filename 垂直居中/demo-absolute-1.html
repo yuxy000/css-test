@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.parent {
+				position: relative;
+				height: 100px;
+				background-color: gray;
+			}
+			
+			.child {
+				position: absolute;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child">
+				我是有点长的有点长的有点长的有点长的有点长的有点长的有点长的测试文字
+			</div>
+		</div>
+		<p>
+			配合translate()位移函数
+			<br />
+			translate函数的百分比是相对于自身高度的，所以top:50%配合translateY(-50%)可实现居中效果
+			<br />
+			[注意]IE9-浏览器不支持
+			<br />
+			[注意]若子元素的高度已知，translate()函数也可替换为margin-top: 负的高度值
+		</p>
+	</body>
+</html>

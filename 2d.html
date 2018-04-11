@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			div {
+				width: 100px;
+				height: 75px;
+				background-color: red;
+				border: 1px solid black;
+			}
+			
+			.div1 {
+				width: 200px;
+				height: 100px;
+				background: yellow;
+				transform: rotate(30deg);
+				-ms-transform: rotate(30deg);
+				-webkit-transform: rotate(30deg);
+			}
+			
+			#div2{
+				margin: 100px;
+				/*transform: translate(50px, 50px);
+				-ms-transform: translate(50px, 50px);
+				-webkit-transform: translate(50px, 50px);*/
+				transform:skew(0deg,20deg);
+-ms-transform:skew(0deg,20deg); /* IE 9 */
+-webkit-transform:skew(0deg,20deg); /* Safari and Chrome */
+				
+			}
+			
+			#div3{
+				margin: 100px;
+				/*transform: translate(50px, 50px);
+				-ms-transform: translate(50px, 50px);
+				-webkit-transform: translate(50px, 50px);*/
+				transform:skew(70deg,0deg);
+-ms-transform:skew(70deg,0deg); /* IE 9 */
+-webkit-transform:skew(-30deg,0deg); /* Safari and Chrome */
+				
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="div1" onresize="">Hello</div>
+		<div>Hello. This is a DIV element.</div>
+
+		<div id="div2">Hello. This is a DIV element.</div>
+		<div id="div3">Hello. This is a DIV element.</div>
+	</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.flex-container {
+				display: -webkit-flex;
+				display: flex;
+				width: 400px;
+				height: 250px;
+				background-color: lightgrey;
+				margin-bottom: 10px;
+			}
+			
+			.flex-container1 {
+				-webkit-justify-content: flex-end;
+				justify-content: flex-end;
+			}
+			
+			.flex-container2 {
+				-webkit-justify-content: center;
+				justify-content: center;
+			}
+			
+			.flex-container3 {
+				-webkit-justify-content: space-around;
+				justify-content: space-around;
+			}
+			
+			.flex-container4 {
+				-webkit-justify-content: space-between;
+				justify-content: space-between;
+			}
+			
+			.flex-item {
+				background-color: cornflowerblue;
+				width: 100px;
+				height: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>justify-content: flex-start;</h3>
+		<div class="flex-container">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>justify-content: flex-end;</h3>
+		<div class="flex-container flex-container1">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>justify-content: center;</h3>
+		<div class="flex-container flex-container2">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>justify-content: space-around;</h3>
+		<div class="flex-container flex-container3">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>justify-content: space-between;</h3>
+		<div class="flex-container flex-container4">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+	</body>
+</html>

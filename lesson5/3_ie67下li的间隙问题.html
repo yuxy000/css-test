@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .list{
+            width: 300px;
+        }
+
+        .list li{
+            height: 30px;
+            border: 1px solid #000000;
+            font-size: 12px;
+            line-height: 30px;
+            vertical-align: top;
+
+        }
+        a{
+            float: left;
+        }
+        span{
+            float: right;
+        }
+
+        /*\
+            ie67下li几个px的间隙问题
+            在ie67下li本身没有浮动,但是内容浮动了li下就会多出来几个px
+
+            解决方法:
+                1.给li加浮动
+                2.给li加vertical-align: top;
+        */
+    </style>
+</head>
+<body>
+<ul class="list">
+    <li>
+        <a href="#">文字文字文字文字</a>
+        <span>作者</span>
+    </li>
+    <li>
+        <a href="#">文字文字文字文字文</a>
+        <span>作者</span>
+    </li>
+    <li>
+        <a href="#">文字文字文字文字</a>
+        <span>作者</span>
+    </li>
+    <li>
+        <a href="#">文字文字文字文字</a>
+        <span>作者</span>
+    </li>
+</ul>
+</body>
+</html>

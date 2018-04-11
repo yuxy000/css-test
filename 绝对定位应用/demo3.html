@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			ul {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			
+			input {
+				padding: 0;
+				border: 0;
+			}
+			
+			.box {
+				width: 200px;
+				height: 38px;
+				border: 2px solid gray;
+			}
+			
+			.con {
+				overflow: hidden;
+			}
+			
+			input {
+				float: left;
+				width: 160px;
+				height: 38px;
+			}
+			
+			.search {
+				float: right;
+				width: 38px;
+				height: 38px;
+				background: url('http://sandbox.runjs.cn/uploads/rs/26/ddzmgynp/search.png') 0 -38px;
+			}
+			
+			.list {
+				display: none;
+				position: absolute;
+				overflow: hidden;
+				width: 158px;
+				border: 1px solid #e6e8e9;
+			}
+			
+			.in {
+				line-height: 30px;
+				border-bottom: 1px solid lightblue;
+				cursor: pointer;
+				text-indent: 1em;
+			}
+			
+			.in:hover {
+				background-color: #f9f9f9;
+			}
+			
+			.in:last-child {
+				margin-bottom: -1px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="con">
+				<input type="text" class="input" id="input" />
+				<a href="javascript:;" class="search"></a>
+			</div>
+			<ul class="list" id="list">
+				<li class="in">选项1</li>
+				<li class="in">选项2</li>
+				<li class="in">选项3</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var input = document.getElementById("input");
+			var list = document.getElementById("list");
+			
+			input.onfocus = function() {
+				list.style.display = 'block';
+			}
+			
+			input.onblur = function () {
+				list.style.display = 'none';
+			}
+		</script>
+	</body>
+</html>

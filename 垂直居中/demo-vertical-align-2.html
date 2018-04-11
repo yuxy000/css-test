@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.parent {
+				line-height: 100px;
+				
+				background-color: gray;
+			}
+			
+			.child {
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<img src="../img/1.jpg" alt="" class="child" />
+		</div>
+		<p>
+			若子元素是图片，通过设置父元素的行高来代替高度，且设置父元素的font-size为0
+			<br />
+			vertical-align:middle的解释是元素的中垂点与父元素的基线加1/2父元素中字母X的高度对齐。由于字符X在em框中并不是垂直居中的，且各个字体的字符X的高低位置不一致。所以，当字体大小较大时，这种差异就更明显。当font-size为0时，相当于把字符X的字体大小设置为0，于是可以实现完全的垂直居中
+		</p>
+	</body>
+</html>

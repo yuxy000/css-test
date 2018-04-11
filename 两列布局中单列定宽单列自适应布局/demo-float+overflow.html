@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body,
+			p {
+				margin: 0;
+			}
+			
+			.parent {
+				overflow: hidden;
+				zoom: 1;
+				height: 100%;
+				background-color: lightgrey;
+			}
+			
+			.left {
+				float: left;
+				width: 160px;
+				height: 100%;
+				margin-right: 20px;
+				background-color: rgba(0, 0, 0, .1);
+			}
+			
+			.right {
+				overflow: hidden;
+				zoom: 1;
+				height: 100%;
+				background-color: lightgreen;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>left</p>
+			</div>
+
+			<div class="right">
+				<p>right</p>
+				<p>right</p>
+				<p>使用overflow属性来触发bfc，来阻止浮动造成的文字环绕效果。由于使用overflow不会改变元素的宽度属性，所以不需要重新设置宽度。由于设置overflow:hidden并不会触发IE6-浏览器的haslayout属性，所以需要设置zoom:1来兼容IE6-浏览器</p>
+			</div>
+
+		</div>
+	</body>
+
+</html>

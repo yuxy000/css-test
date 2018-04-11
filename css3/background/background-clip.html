@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				border: 10px dotted black;
+				padding: 30px;
+				background: yellow;
+			}
+			
+			#div1 {
+				background-clip: border-box;
+			}
+			
+			#div2 {
+				background-clip: padding-box;
+			}
+			
+			#div3 {
+				background-clip: content-box;/*default*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<p>没有背景剪裁 (border-box没有定义):</p>
+<div id="div1">
+<h2>Lorem Ipsum Dolor</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: padding-box:</p>
+<div id="div2">
+<h2>Lorem Ipsum Dolor</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<p>background-clip: content-box:</p>
+<div id="div3">
+<h2>Lorem Ipsum Dolor</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+	</body>
+
+</html>

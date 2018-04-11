@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.flex-container {
+				display: -webkit-flex;
+				display: flex;
+				width: 300px;
+				height: 250px;
+				background-color: lightgrey;
+				margin-bottom: 10px;
+			}
+			
+			.flex-container1 {
+				-webkit-flex-wrap: nowrap;
+				flex-wrap: nowrap;
+			}
+			
+			.flex-container2 {
+				-webkit-flex-wrap: wrap;
+				flex-wrap: wrap;
+			}
+			
+			.flex-container3 {
+				-webkit-flex-wrap: wrap-reverse;
+				flex-wrap: wrap-reverse;
+			}
+			
+			.flex-item {
+				background-color: cornflowerblue;
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>flex-wrap: nowrap; - 默认， 弹性容器为单行。该情况下弹性子项可能会溢出容器。</h3>
+		<div class="flex-container flex-container1">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>flex-wrap: wrap; - 弹性容器为多行。该情况下弹性子项溢出的部分会被放置到新行，子项内部会发生断行</h3>
+		<div class="flex-container flex-container2">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+		<h3>flex-wrap: wrap-reverse; - 反转 wrap 排列。</h3>
+		<div class="flex-container flex-container3">
+			<div class="flex-item">flex item 1</div>
+			<div class="flex-item">flex item 2</div>
+			<div class="flex-item">flex item 3</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			p {
+				margin: 0;
+			}
+			
+			.parent {
+				display: table;
+				table-layout: fixed;
+				width: 100%;
+				
+				background-color: lightgrey;
+			}
+			
+			.left,
+			.right,
+			.center-wrap {
+				display: table-cell;
+				font-size: 16px;
+			}
+			
+			
+			.left, .right {
+				width: 120px;
+			}
+			.left {
+				background-color: lightblue;
+			}
+			
+			.right {
+				background-color: lightgreen;
+			}
+			
+			.center {
+				margin: 0 20px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>Left</p>
+			</div>
+
+			<div class="center-wrap">
+				<div class="center">
+					<p>Center</p>
+					<p>Center</p>
+				</div>
+			</div>
+
+			<div class="right">
+				<p>Right</p>
+			</div>
+		</div>
+	</body>
+
+</html>

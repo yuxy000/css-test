@@ -1,0 +1,2 @@
+text:
+	text-align:justify 没有打到预期效果

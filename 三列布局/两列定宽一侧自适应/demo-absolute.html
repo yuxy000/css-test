@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+			}
+			
+			p {
+				margin: 0;
+			}
+			
+			.parent {
+				position: relative;
+				width: 100%;
+				height: 40px;
+				background-color: lightgrey;
+			}
+			
+			.left {
+				position: absolute;
+				left: 0;
+				width: 120px;
+				background-color: lightblue;
+			}
+			
+			.right {
+				position: absolute;
+				left: 280px;
+				right: 0;
+				background-color: lightgreen;
+			}
+			
+			.center {
+				position: absolute;
+				left: 140px;
+				width: 120px;
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="left">
+				<p>Left</p>
+			</div>
+			
+			<div class="center">
+				<p>Center</p>
+				<p>Center</p>
+			</div>
+			
+			<div class="right">
+				<p>Right</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.flex-container {
+				display: -webkit-flex;
+				display: flex;
+				width: 400px;
+				height: 250px;
+				background-color: lightgrey;
+			}
+			
+			.flex-item {
+				background-color: cornflowerblue;
+				width: 100px;
+				height: 100px;
+				margin: 10px;
+			}
+			
+			.first {
+				-webkit-order: 1;
+				order: 1;
+			}
+			
+			.second {
+				-webkit-order: 2;
+				order: 2;
+			}
+			.third {
+				-webkit-order: -1;
+				order: -1;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>order 排序 用整数值来定义排列顺序，数值小的排在前面。可以为负值。</h2>
+		<div class="flex-container">
+			<div class="flex-item first">flex item 1</div>
+			<div class="flex-item second">flex item 2</div>
+			<div class="flex-item third">flex item 3</div>
+		</div>
+	</body>
+</html>

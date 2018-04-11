@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+		<style type="text/css">
+			div {
+				margin-bottom: 30px;
+				width: 500px;
+				height: 20px;
+				line-height: 20px;
+			}
+			
+			i {
+				position: absolute;
+				width: 28px;
+				height: 10px;
+				margin: -6px 0 0 2px;
+				background: url('http://sandbox.runjs.cn/uploads/rs/26/ddzmgynp/hot.gif');
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box">长度可变文字<i></i></div>
+		<button onclick="create()">文字变多</button>
+		<script>
+			var str = $("#box").text();
+			function create() {
+				$("#box").prepend(str);
+			}
+		</script>
+	</body>
+
+</html>

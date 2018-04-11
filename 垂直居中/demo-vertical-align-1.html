@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.parent {
+				display: table-cell;
+				vertical-align: middle;
+				height: 100px;
+				background-color: gray;
+			}
+			
+			.child {
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="child">
+				我是有点长的有点长的有点长的有点长的有点长的有点长的有点长的测试文字
+			</div>
+		</div>
+		<p>
+			设置父元素的display为table-cell
+			<br />
+			通过为table-cell元素设置vertical-align:middle，可使其子元素均实现垂直居中。这和表格里单元格的垂直居中是类似的
+			<br />
+			[注意]若要IE7-浏览器支持，则可以将其改为&lt;table&gt;表格结构
+			<br />
+			[注意]设置为table-cell的div不能使用浮动或绝对定位，因为浮动或绝对定位会使元素具有块级元素特性，从而丧失了table-cell元素具有的垂直对齐的功能。若需要浮动或绝对定位处理，则需要外面再套一层div
+		</p>
+	</body>
+</html>

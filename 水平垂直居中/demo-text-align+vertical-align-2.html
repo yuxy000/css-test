@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.parent {
+				width: 200px;
+				line-height: 150px;
+				
+				text-align: center;
+				font-size: 0;
+				
+				background-color: gray;
+			}
+			
+			.child {
+				vertical-align: middle;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<img src="../img/1.jpg" alt="" class="child" />
+		</div>
+		<p>
+			若子元素是图像，可不使用table-cell，而是其父元素用行高替代高度，且字体大小设为0。子元素本身设置vertical-align:middle
+		</p>
+	</body>
+</html>

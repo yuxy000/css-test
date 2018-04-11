@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				animation: yuFisrt 3s;
+				-webkit-animation: yuFisrt 3s;
+				-moz-animation: yuFirst 3s;
+				-ms-animation: yuFisrt 3s;
+			}
+			
+			@keyframes yuFisrt{
+				from{background-color: red;}
+				to{background-color: yellow;}
+			}
+			@-webkit-@keyframes yuFisrt{
+				from{background-color: red;}
+				to{background-color: yellow;}
+			}
+			@-moz-@keyframes yuFisrt{
+				from{background-color: red;}
+				to{background-color: yellow;}
+			}
+			@-ms-@keyframes yuFisrt{
+				from{background-color: red;}
+				to{background-color: yellow;}
+			}
+		</style>
+	</head>
+
+	<body>
+		<p><b>注意:</b> 该实例在 Internet Explorer 9 及更早 IE 版本是无效的。</p>
+
+		<div></div>
+		<p>注意: 您必须定义动画的名称和动画的持续时间。如果省略的持续时间，动画将无法运行，因为默认值是0。</p>
+	</body>
+
+</html>
